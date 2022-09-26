@@ -2,8 +2,28 @@ package hw4.n11.Property;
 
 import hw4.n11.Insurance;
 
-public interface Property extends Insurance {
-    void conclusion(String name, double money, int month);
+public abstract class Property extends Insurance {
+    public Property(String companyName, String name, int month, double cashProMonth, String datum) {
+        super(companyName, name, month, cashProMonth, datum);
+    }
 
-    void extension(int month);
+    @Override
+    protected void conclusion() {
+
+    }
+
+    @Override
+    protected void extension() {
+
+    }
+
+    @Override
+    protected void termination() {
+
+    }
+
+    @Override
+    protected void execution() {
+
+    }
 }
