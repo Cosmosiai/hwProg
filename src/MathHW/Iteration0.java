@@ -11,7 +11,7 @@ public class Iteration0 {
                 {1.2,0.11,0.23,-0.51},
                 {-0.17,0.17,-0.21,0.31}
         };
-        iterations(a,0,0,0,0,0.001);
+        iterations(a,0,0,0,0,0.001,0);
     }
 //    public static double[][] newMatrix(int size){
 //        double[][] a = new double[size][size];
@@ -49,7 +49,7 @@ public class Iteration0 {
 //        return a;
 //    }
 
-    public static void iterations(double[][] a, double x1, double x2, double x3, double x4, double check){
+    public static void iterations(double[][] a, double x1, double x2, double x3, double x4, double check, int counter){
         double x11 = a[0][0]+a[0][1]*x2+a[0][2]*x3+a[0][3]*x4;
         double x12 = a[1][0]+a[1][1]*x1+a[1][2]*x3+a[1][3]*x4;
         double x13 = a[2][0]+a[2][1]*x1+a[2][2]*x2+a[2][3]*x4;
@@ -58,8 +58,10 @@ public class Iteration0 {
         if((x1-x11)<=check&&(x2-x12)<=check&&(x3-x13)<=check&&(x4-x14)<=check){
             System.out.println("метод итерации");
             System.out.println("x1 = "+x11+", x2 = "+x12+", x3 = "+x13+", x4 = "+x14);
+            System.out.println("количество итераций: "+counter);
         }else {
-            iterations(a, x11, x12, x13, x14, check);
+            counter++;
+            iterations(a, x11, x12, x13, x14, check, counter);
         }
     }
 }
