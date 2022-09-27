@@ -8,11 +8,6 @@ public abstract class Liability extends Insurance {
     }
 
     @Override
-    protected void conclusion() {
-
-    }
-
-    @Override
     protected void extension() {
 
     }

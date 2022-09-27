@@ -15,7 +15,6 @@ public abstract class Insurance {
         this.datum = datum;
     }
 
-    protected abstract void conclusion();
     protected abstract void extension();
     protected abstract void termination();
     protected abstract void execution();
