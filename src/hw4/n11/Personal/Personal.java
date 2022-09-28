@@ -2,23 +2,41 @@ package hw4.n11.Personal;
 
 import hw4.n11.Insurance;
 
-public abstract class Personal extends Insurance {
+public abstract class Personal implements Insurance {
+    public String companyName;
+    public String name;
+    public int month;
+    private double cashProMonth;
+    private String datum;
+
     public Personal(String companyName, String name, int month, double cashProMonth, String datum) {
-        super(companyName, name, month, cashProMonth, datum);
+        this.companyName = companyName;
+        this.name = name;
+        this.month = month;
+        this.cashProMonth = cashProMonth;
+        this.datum = datum;
+    }
+
+    public Personal() {
     }
 
     @Override
-    protected void extension() {
+    public void extension() {
 
     }
 
     @Override
-    protected void termination() {
+    public void termination() {
 
     }
 
     @Override
-    protected void execution() {
+    public void execution() {
+
+    }
+
+    @Override
+    public void howMuchPay() {
 
     }
 }

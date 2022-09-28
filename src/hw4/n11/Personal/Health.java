@@ -7,17 +7,21 @@ public class Health extends Personal{
     }
 
     @Override
-    protected void extension() {
+    public void extension() {
         super.extension();
     }
 
     @Override
-    protected void termination() {
+    public void extension(int month) {
+
+    }
+
+    @Override
+    public void termination() {
         super.termination();
     }
 
     @Override
-    protected void execution() {
-        super.execution();
+    public void execution() {
     }
 }
