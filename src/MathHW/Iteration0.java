@@ -55,6 +55,7 @@ public class Iteration0 {
         double x13 = a[2][0]+a[2][1]*x1+a[2][2]*x2+a[2][3]*x4;
         double x14 = a[3][0]+a[3][1]*x1+a[3][2]*x2+a[3][3]*x3;
 
+
         if((x1-x11)<=check&&(x2-x12)<=check&&(x3-x13)<=check&&(x4-x14)<=check){
             System.out.println("метод итерации");
             System.out.println("x1 = "+x11+", x2 = "+x12+", x3 = "+x13+", x4 = "+x14);
