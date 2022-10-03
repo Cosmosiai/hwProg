@@ -35,8 +35,7 @@ public abstract class Personal implements Insurance {
 
     }
 
-    @Override
-    public void howMuchPay() {
+    public static void howMuchPay() {
 
     }
 }

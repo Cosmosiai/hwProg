@@ -13,7 +13,8 @@ public class Health extends Personal{
 
     @Override
     public void extension(int month) {
-
+        this.month = this.month + month;
+        System.out.println("контракт продлён");
     }
 
     @Override
@@ -23,5 +24,7 @@ public class Health extends Personal{
 
     @Override
     public void execution() {
+        this.month = this.month + month;
+        System.out.println("контракт продлён");
     }
 }

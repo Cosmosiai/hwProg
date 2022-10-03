@@ -35,8 +35,8 @@ public abstract class Property implements Insurance {
 
     }
 
-    @Override
-    public void howMuchPay() {
+
+    public static void howMuchPay() {
 
     }
 }

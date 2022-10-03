@@ -23,21 +23,23 @@ public abstract class Liability implements Insurance {
 
     @Override
     public void extension() {
-
+        this.month = this.month + month;
+        System.out.println("контракт продлён");
     }
 
     @Override
     public void termination() {
-
+        this.month = 0;
+        System.out.println("контракт расторгнут");
     }
 
     @Override
     public void execution() {
-
+        System.out.println("к вам едут наши специалисты");
     }
 
-    @Override
-    public void howMuchPay() {
+
+    public static void howMuchPay() {
 
     }
 }

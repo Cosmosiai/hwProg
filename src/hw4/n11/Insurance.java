@@ -7,5 +7,8 @@ public interface Insurance {
 
     public void termination();
     public void execution();
-    public void howMuchPay();
+
+    public static void howMuchPay() {
+
+    }
 }
