@@ -7,6 +7,7 @@ public class Home extends Property{
     }
 
     public Home() {
+
     }
 
 

@@ -14,17 +14,17 @@ public class Main {
         switch (a){
             case 1:
                 System.out.println("выберите вид личного страхования\n1 - страхование здоровья");
-//                int b = sc.nextInt();
-//                switch(b){
-//                    case 1:
-//                        Professional pro = null;
-//                        pro.howMuchPay();
-//                        break;
-//                }
+                int b = sc.nextInt();
+                switch(b){
+                    case 1:
+                        Professional pro = null;
+                        pro.howMuchPay();
+                        break;
+                }
                 break;
             case 2:
                 System.out.println("выберите вид страхования страхования ответственности\n1 - профессиональное страхование");
-                int b = sc.nextInt();
+                b = sc.nextInt();
                 switch(b){
                     case 1:
                         Professional pro = new Professional();
@@ -33,8 +33,12 @@ public class Main {
                 }
                 break;
             case 3:
-//                System.out.println("выберите вид страхования имущества\n1 - жилищное страхование");
-//                int b = sc.nextInt();
+                System.out.println("выберите вид страхования имущества\n1 - жилищное страхование");
+                b = sc.nextInt();
+                switch(b){
+                    case 1:
+
+                }
                 break;
                 
         }
